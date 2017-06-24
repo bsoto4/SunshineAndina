@@ -1,0 +1,9 @@
+<resources>
+    <string name="app_name">SushineAndina</string>
+
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+
+    <string name="action_settings">Settings</string>
+    <string name="descripcion">Hidratante a base de extracto de maracuyá. Su fórmula leve proporciona hidratación equilibrada para la piel del rostro</string>
+</resources>
