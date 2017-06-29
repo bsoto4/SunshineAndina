@@ -1,8 +1,10 @@
 package com.fisi.sushineandina.activity;
 
 import android.content.Intent;
+import android.os.CountDownTimer;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
+import android.view.Window;
 
 import com.fisi.sushineandina.R;
 
@@ -21,8 +23,21 @@ public class SplashActivity extends AppCompatActivity {
                 } catch (InterruptedException e) {
                     e.printStackTrace();
                 }
-                startActivity(new Intent(SplashActivity.this, MainActivity.class));
+
             }
         }).start();
+
+        new CountDownTimer(2000, 1000) { //4000 milli seconds is total time, 1000 milli seconds is time interval
+
+            public void onTick(long millisUntilFinished) {
+            }
+
+            public void onFinish() {
+                Intent intent = new Intent(SplashActivity.this, MainActivity.class);
+                startActivity(intent);
+                overridePendingTransition(R.anim.slide_in_right, R.anim.slide_out_left);
+                finish();
+            }
+        }.start();
     }
 }

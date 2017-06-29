@@ -14,26 +14,26 @@ import com.fisi.sushineandina.data.entity.Producto;
 
 import java.util.ArrayList;
 
-public class CarritoActivity extends AppCompatActivity {
+public class FavoritosActivity extends AppCompatActivity {
 
     private RecyclerView rvProductos;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_carrito);
+        setContentView(R.layout.activity_favoritos);
 
         Toolbar toolbar = (Toolbar) findViewById(R.id.toolbar);
         setSupportActionBar(toolbar);
         getSupportActionBar().setDisplayHomeAsUpEnabled(true);
         getSupportActionBar().setDefaultDisplayHomeAsUpEnabled(true);
-        getSupportActionBar().setTitle("Mi carrito");
+        getSupportActionBar().setTitle("Favoritos");
 
 
         rvProductos = (RecyclerView) findViewById(R.id.rv_productos);
-        LinearLayoutManager llm = new LinearLayoutManager(this);
-        CarritoAdapter adapter = new CarritoAdapter(this, getProductos());
-        rvProductos.setLayoutManager(llm);
+        GridLayoutManager glm = new GridLayoutManager(this, 2);
+        ProductoAdapter adapter = new ProductoAdapter(this, getProductos());
+        rvProductos.setLayoutManager(glm);
         rvProductos.setAdapter(adapter);
     }
 

@@ -31,7 +31,7 @@ public class CarritoAdapter extends RecyclerView.Adapter<CarritoAdapter.Producto
 
     @Override
     public ProductoHolder onCreateViewHolder(ViewGroup parent, int viewType) {
-        return new ProductoHolder(LayoutInflater.from(context).inflate(R.layout.item_producto, parent, false));
+        return new ProductoHolder(LayoutInflater.from(context).inflate(R.layout.item_carrito, parent, false));
     }
 
     @Override
@@ -40,12 +40,12 @@ public class CarritoAdapter extends RecyclerView.Adapter<CarritoAdapter.Producto
         holder.productoImagen.setImageResource(producto.getProductoImagen());
         holder.productoNombre.setText(producto.getProductoNombre());
         holder.productoPrecio.setText("S/" + producto.getProductoPrecio());
-        holder.productoCantidad.setText(producto.getProductoCantidad());
+        holder.productoCantidad.setText(producto.getProductoCantidad()+"");
         holder.btnDisminuir.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
                 producto.setProductoCantidad(producto.getProductoCantidad()-1);
-                holder.productoCantidad.setText(producto.getProductoCantidad());
+                holder.productoCantidad.setText(producto.getProductoCantidad()+"");
             }
         });
 
@@ -53,7 +53,7 @@ public class CarritoAdapter extends RecyclerView.Adapter<CarritoAdapter.Producto
             @Override
             public void onClick(View view) {
                 producto.setProductoCantidad(producto.getProductoCantidad()+1);
-                holder.productoCantidad.setText(producto.getProductoCantidad());
+                holder.productoCantidad.setText(producto.getProductoCantidad()+"");
             }
         });
     }

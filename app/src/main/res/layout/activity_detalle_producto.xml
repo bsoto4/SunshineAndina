@@ -18,7 +18,7 @@
             android:id="@+id/toolbar_layout"
             android:layout_width="match_parent"
             android:layout_height="match_parent"
-            android:background="@drawable/producto"
+            android:background="@drawable/img_producto2"
             android:fitsSystemWindows="true"
             app:contentScrim="?attr/colorPrimary"
             app:layout_scrollFlags="scroll|exitUntilCollapsed">
@@ -68,29 +68,22 @@
                 android:text="@string/lorem"
                 android:textSize="@dimen/texto" />
 
-            <LinearLayout
+            <TextView
+                android:id="@+id/producto_precio"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_marginTop="20dp"
-                android:orientation="horizontal">
+                android:text="S/50.00"
+                android:textColor="@color/red"
+                android:textSize="@dimen/titulo"
+                android:textStyle="bold" />
 
-                <TextView
-                    android:id="@+id/producto_precio"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:text="S/50.00"
-                    android:textColor="@color/red"
-                    android:textSize="@dimen/titulo"
-                    android:textStyle="bold" />
-
-                <TextView
-                    android:layout_marginLeft="20dp"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:background="@drawable/selector_strike"
-                    android:text="S/70.00"
-                    android:textSize="15sp" />
-            </LinearLayout>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/selector_strike"
+                android:text="S/70.00"
+                android:textSize="14sp" />
 
             <TextView
                 android:layout_width="wrap_content"
@@ -103,7 +96,7 @@
                 android:id="@+id/producto_precio_normal"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:layout_marginTop="20dp"
+                android:layout_marginTop="30dp"
                 android:backgroundTint="@color/colorAccent"
                 android:text="Agregar al carrito"
                 android:textColor="@color/white"

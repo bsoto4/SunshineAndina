@@ -56,10 +56,10 @@ public class ProductosFragment extends Fragment {
 
     private ArrayList<Producto> getProductos() {
         ArrayList<Producto> productos = new ArrayList<>();
-        productos.add(new Producto(1, "Producto 1", "Descripcion 1", 10.00, 20.00, 50, R.drawable.producto, 20, 1));
-        productos.add(new Producto(1, "Producto 1", "Descripcion 1", 10.00, 20.00, 50, R.drawable.producto, 20, 1));
-        productos.add(new Producto(1, "Producto 1", "Descripcion 1", 10.00, 20.00, 50, R.drawable.producto, 20, 1));
-        productos.add(new Producto(1, "Producto 1", "Descripcion 1", 10.00, 20.00, 50, R.drawable.producto, 20, 1));
+        productos.add(new Producto(1, "Hidratante Facial - Maracuyá", "Descripcion 1", 10.00, 20.00, 50, R.drawable.producto, 20, 1));
+        productos.add(new Producto(1, "Hidratante Facial - Maracuyá", "Descripcion 1", 10.00, 20.00, 50, R.drawable.producto, 20, 1));
+        productos.add(new Producto(1, "Hidratante Facial - Maracuyá", "Descripcion 1", 10.00, 20.00, 50, R.drawable.producto, 20, 1));
+        productos.add(new Producto(1, "Hidratante Facial - Maracuyá", "Descripcion 1", 10.00, 20.00, 50, R.drawable.producto, 20, 1));
         return productos;
     }
 

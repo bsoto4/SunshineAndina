@@ -7,8 +7,12 @@
     <color name="orange">#FF9800</color>
     <color name="divider">#9E9E9E</color>
     <color name="light_gray">#e7e1e1</color>
+    <color name="dark_gray">#616161</color>
     <color name="white">#FFFFFF</color>
     <color name="facebook">#3B5998</color>
     <color name="gmail">#D62D20</color>
-    <color name="red">#FF0000</color>
+    <color name="red">#F44336</color>
+    <color name="text">#616161</color>
+    <color name="hint">#757575</color>
+
 </resources>
