@@ -71,7 +71,7 @@ public class MainActivity extends AppCompatActivity
         switch (id) {
             case R.id.nav_perfil:
                 flag = 2;
-                intent = new Intent(this, LoginActivity.class);
+                intent = new Intent(this, ProfileActivity.class);
                 break;
             case R.id.nav_compras:
                 flag = 1;

@@ -5,9 +5,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical"
-    tools:context="com.fisi.sushineandina.activity.CuponesActivity">
-
-    <include layout="@layout/toolbar" />
+    tools:context="com.fisi.sushineandina.activity.CompraActivity">
 
     <LinearLayout
         android:layout_width="match_parent"
@@ -15,13 +13,21 @@
         android:gravity="center|top"
         android:orientation="vertical">
 
-        <ImageView
+        <RelativeLayout
             android:layout_width="match_parent"
             android:layout_height="250dp"
             android:layout_marginBottom="10dp"
-            android:layout_marginTop="20dp"
-            android:padding="30dp"
-            android:src="@drawable/descuento" />
+            android:layout_marginTop="20dp">
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="250dp"
+                android:layout_marginBottom="10dp"
+                android:layout_marginTop="20dp"
+                android:padding="15dp"
+                android:src="@drawable/img_delivery" />
+
+        </RelativeLayout>
 
         <TextView
             android:layout_width="match_parent"
@@ -30,9 +36,9 @@
             android:layout_marginLeft="60dp"
             android:layout_marginRight="60dp"
             android:gravity="center"
-            android:text="Recibe un 50% de descuento en tu primera compra"
+            android:text="Tu compra se realizó con satisfactoriamente"
             android:textColor="@color/text"
-            android:textSize="20sp"
+            android:textSize="@dimen/titulo"
             android:textStyle="bold" />
 
         <TextView
@@ -42,7 +48,9 @@
             android:layout_marginLeft="30dp"
             android:layout_marginRight="30dp"
             android:gravity="center"
-            android:text="El descuento se aplicará automáticamente al momento de realizar tu primera compra, tienes hasta el 24/08/2017 para utilizarlo antes que caduque." />
+            android:textColor="@color/text"
+            android:textSize="@dimen/texto"
+            android:text="Tu pedido será enviado como máximo en 15 días\nRecuerda que puedes realizar el seguimiento de tu orden en la sección de Mis compras" />
 
         <Button
             android:id="@+id/btn_pager"
@@ -50,9 +58,8 @@
             android:layout_height="wrap_content"
             android:backgroundTint="@color/colorAccent"
             android:padding="15dp"
-            android:text="Ir a comprar"
+            android:text="Seguir comprando"
             android:textColor="@color/white" />
     </LinearLayout>
-
 
 </LinearLayout>
